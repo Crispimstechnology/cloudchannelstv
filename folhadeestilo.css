@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* *inicia todos os elementos com margin e o padding 0 */
+
+.container-principal {
+	font-family: 'verdana';
+	color: #777
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #1467e4;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #1E90FF;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 1024px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #4682B4;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #1E90FF;
+    }   
+}
+
+
+/* Definindo as propriedades da imagem principal */
+
+#banner {
+	width: 100%;
+}
+
+#banner img {
+	width: 100%;
+	/*margin-bottom: 0;*/
+}
+
+/*Definindo as propriedades das pop-ups */
+
+.modalDialog {
+	position: relative;
+	font-family: 'verdana';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #00000031;
+	z-index: 9999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+}
+
+.modalDialog:target {
+	display: block;
+	opacity: 1;
+	pointer-events: auto;
+
+}
+
+.modalDialog div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.modalDialog p {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.modalDialog img {
+	width: 50%;
+	position: relative;
+	margin-left: 25%;
+
+}
+
+.close {
+	color: #FFFFFF;
+
+
+
+	background-color: #00ffff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.close:hover {
+	background-color: #b50909;
+}
+
+footer {
+	background-color: #1467e4;
+	width: 100%;
+	color: #ffffff;
+	position: relative;
+	float: left;
+	font-family:'verdana';
+	text-align: center;
+	padding: 50px;
+}
+
+footer .footer-text {
+	width: 30%;
+	margin: 1%;
+	position: relative;
+	float: left;
+	text-align: left;
+}
+
+footer .footer-text a {
+	color: #f2f2f2;
+}
+
+
+
+/* Definindo a cor das parinas do site  */
+.color-page {
+	background-color: #fff
+}
+
+
+/* Definindo as config do conteiner config-home*/
+
+#c-home{width: 75%; 
+    position: relative; 
+        float: left;
+}
+#c-home .config-home {
+width: 40%;
+border: 1px solid #1E90FF;
+margin: 1.5%;
+padding: 1%;
+float: left ;
+margin-top: 30px;
+background-color: #fff;
+}
+#c-home .config-home img{
+width: 60%;
+margin-left: 20%;
+margin-bottom: 20%;
+} 
+
+#c-home .config-home p{
+width: 90%;
+margin-left: 5%;
+font-size: 1.2em;
+margin-bottom: 20px;
+text-align: center;
+}
+#c-home .config-home p a{color: aqua;}
+
+
+#bannercontact {
+	width: 50%;
+}
+
+#bannercontact img {
+	width: 50%;
+	/*margin-bottom: 0;*/
+}
+div.box {
+	width: 220px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/*scroll para o topo*/
+
+#topo-nav{
+	text-decoration: none;
+	color: #00ffff;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+html{
+	scroll-behavior: smooth;
+}
