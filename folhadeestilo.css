@@ -29,7 +29,7 @@ nav{
 }
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     nav .logo img{
-        display: block;
+        display: block;}
     }
 nav ul{
     display: flex;
@@ -64,7 +64,7 @@ nav .menu-btn i{
 
 @media (max-width: 1024px) {
     nav .menu-btn i{
-        display: block;
+        display: block;}
     }
     nav ul{
         position: fixed;
