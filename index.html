@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Cloud Channels </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="folhadeestilo.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
 <body>
@@ -38,60 +39,88 @@
 		<img  src="home.gif"> <br> 
 	</a>
 </section>
-		<div id="openModal"  class="modalDialog"> 
-			<div>
-				<a href="#close" class="close">X</a>
-				<h1> Canais Online em HD</h1>
-				<p> Na ### você pode assistir centenas de canais de TV Online e Câmeras Ao Vivo do mundo todo! </p>
-						<img src="banner.png" >
-			</div>
-	</div>
+  <div id="demo-modal" class="modal" role="dialog" tabindex="-1">
+      <div class="model-inner">
+        <div class="modal-header">
+          <h3>Canais Online em HD</h3>
+          <button class="modal-close" data-id="demo-modal" aria-label="Close">
+            &times;
+          </button>
+        </div>
+        <p>
+          Na Cloud Channels você pode assistir 
+          centenas de canais de TV Online e Câmeras Ao Vivo do mundo todo! 
+        </p>
+        <img src="banner.png" alt="imagem modal">
+      </div>
+    </div>
 
-<div id="openModal1"  class="modalDialog"> 
-			<div>
-				<a href="#close" title="close" class="close">X</a>
-				<h1> Tudo Grátis!</h1>
-				<p> TV Online ao vivo grátis e ler as notícias dos bastidores da televisão e famosos, 
-					ver fofocas, audiência da TV, programação de futebol em qual canal vai passar. </p>
-						<img src="banner.png" >
+    <div id="demo-modal1" class="modal" role="dialog" tabindex="-1">
+      <div class="model-inner">
+        <div class="modal-header">
+          <h3>Tudo Grátis!</h3>
+          <button class="modal-close" data-id="demo-modal" aria-label="Close">
+            &times;
+          </button>
+        </div>
+        <p>
+          TV Online ao vivo grátis e ler as notícias 
+          dos bastidores da televisão e famosos, 
+					ver fofocas, audiência da TV, 
+          programação de futebol em qual canal vai passar. 
+        </p>
+        <img src="banner.png" alt="imagem modal">
+      </div>
+    </div>
 
-			</div>
-	</div>
+    <div id="demo-modal2" class="modal" role="dialog" tabindex="-1">
+      <div class="model-inner">
+        <div class="modal-header">
+          <h3>Futebol é aqui!</h3>
+          <button class="modal-close" data-id="demo-modal" aria-label="Close">
+            &times;
+          </button>
+        </div>
+        <p>
+          Uma plataforma inovadora, permite que você acompanhe jogos de futebol grátis 
+          e em alta qualidade. Além disso, é bastante intuitiva e de fácil utilização 
+          proporcionando uma ótima experiência para que você acompanhe seus times 
+          favoritos e em tempo real. O MundoFut oferece informações atualizadas sobre 
+          partidas, classificações e destaques dos campeonatos de futebol mais 
+          importantes do Mundo!
+        </p>
+        <img src="banner.png" alt="imagem modal" >
+      </div>
+    </div>
 
-<div id="openModal2"  class="modalDialog"> 
-			<div>
-				<a href="#close" title="close" class="close">X</a>
-				<h1> Futebol é aqui!</h1>
-				<p> Uma plataforma inovadora, permite que você acompanhe jogos de futebol grátis e em alta qualidade. Além disso, é bastante intuitiva e de fácil utilização proporcionando uma ótima experiência para que você acompanhe seus times favoritos e em tempo real. O MundoFut oferece informações atualizadas sobre partidas, classificações e destaques dos campeonatos de futebol mais importantes do Mundo!</p>
-						<img src="banner.png" >
 
-			</div>
-	</div>
-
-<footer>
+    <footer>
 			<div class="footer-text"> 
 				<h3> Canais Online em HD </h3>
 				<p>Saiba mais sobre nosso site.
-					<a href="#openModal"> Clique Aqui!</a> 
+				<button class="modal-open" data-id="demo-modal">Display Modal</button>> 
 				</p>
 			</div>
+    
 
 			<div class="footer-text"> 
 				<h3> Tudo Grátis!  </h3>
 				<p>Saiba mais sobre nossos Canais.
-					<a href="#openModal1"> Clique Aqui!</a> 
+				<button class="modal-open" data-id="demo-modal1">Display Modal</button> 
 				</p>
 			</div>
 
 			<div class="footer-text"> 
 				<h3> Futebol é aqui! </h3>
 				<p>Saiba mais sobre nosso canais de Futebol.
-					<a href="#openModal2"> Clique Aqui!</a> 
+				<button class="modal-open" data-id="demo-modal2">Display Modal</button>
 				</p>
 			</div>
 </footer>
 
+    <button class="modal-open" data-id="demo-modal">Click Aqui</button>
 
+<script src="script.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
