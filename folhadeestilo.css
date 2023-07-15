@@ -27,7 +27,7 @@ nav{
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
-@media only screen and (max-width: 600px) and (min-width: 300px) {
+@media only screen and (max-width: 1400px) and (min-width: 300px) {
     nav .logo img{
         display: block;
     }
@@ -62,7 +62,7 @@ nav .menu-btn i{
     display: none;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 300px) {
+@media only screen and (max-width: 1400px) and (min-width: 300px) {
     nav .menu-btn i{
         display: block;
     }
@@ -115,7 +115,7 @@ nav .menu-btn i{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #00000031;
+	background: #000000;
 	z-index: 9999;
 	opacity: 0;
 	-webkit-transition: opacity 400ms ease-in;
