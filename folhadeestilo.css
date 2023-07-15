@@ -61,7 +61,8 @@ nav .menu-btn i{
     cursor: pointer;
     display: none;
 }
-@media (max-width: 1024px) {
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
     nav .menu-btn i{
         display: block;
     }
